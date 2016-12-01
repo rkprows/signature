@@ -10,7 +10,7 @@ class App extends React.Component {
       signature: {
         fullName:'',
         jobTitle:'',
-        phone_number:'',
+        phone_number:' ',
         email:''
       },
       frontDesk: ''
@@ -22,9 +22,9 @@ class App extends React.Component {
     let jobTitle = this.refs.jobTitle.value.toUpperCase()
     let phoneNumber 
       if (this.refs.phoneNumber.value) {
-        phoneNumber = 'DIRECT:' + ' ' + this.refs.phoneNumber.value
+        phoneNumber = 'DIRECT: (' + this.refs.phoneNumber.value.substring(0,3) + ') ' + this.refs.phoneNumber.value.substring(3,6) + '-' + this.refs.phoneNumber.value.substring(6,10);
       } else {
-        phoneNumber = ''
+        phoneNumber = ' '
       }
     let email
       if (this.refs.email.value) {
