@@ -1,7 +1,6 @@
 @import "materialize";
 
 
-
 /* INDEX */
 .title {
   margin-left: 40px;
@@ -24,12 +23,9 @@ label {
   font-size: 100%;
 }
 
-/* CARD */
-#example {
-  border: 1px solid black;
-  margin: 2px;
+#card {
+  margin-left: 75px;
 }
-
 input {
   border: 2px solid #cccccc !important;
   color: #333333;
@@ -41,27 +37,64 @@ input {
   word-break: normal;
 }
 
-#left {
+
+/* CARD */
+#example {
+  border: 2px solid black;
+  height: 200px;
+  width: 100%;
+  -webkit-user-select: all; 
+  -moz-user-select: all;     
+}
+
+#example p {
+  width: 100%;
+  margin: 0px;
+}
+
+
+#logo {
+  width: 50px;
+  height: 45px;
+  margin: 4px 15px 15px 15px;
+  padding: 0;
   float: left;
 }
 
-#logo {
-  width: 45px;
-  height: 40px;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 0;
-}
-
 #card-header {
-  border-bottom: 1px solid black;
-  width: 50%;
-  padding: 0px;
+  border-bottom: 2px solid #6DA34D;
+  width: 60%;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-top: 20px;
 }
-
-
-
 
 #card-details {
-  margin-left: 10px;
+  margin-top: 15px;
+  margin-left: 85px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#card-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#card-title {
+  font-size: 12px;
+  color: #6DA34D;
+  font-weight: bold;
+}
+
+#card-company {
+  font-style: italic;
+  font-size: 12px;
+}
+
+
+#card-website {
+  color: #6DA34D;
+  font-size: 12px;
 }
