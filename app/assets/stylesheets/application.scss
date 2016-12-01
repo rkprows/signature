@@ -39,12 +39,12 @@ input {
 
 
 /* CARD */
+.editable {
+  cursor: all;
+}
 #example {
   border: 2px solid black;
   height: 200px;
-  width: 100%;
-  -webkit-user-select: all; 
-  -moz-user-select: all;     
 }
 
 #example p {
@@ -64,37 +64,37 @@ input {
 #card-header {
   border-bottom: 2px solid #6DA34D;
   width: 60%;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   display: inline-block;
   margin-top: 20px;
 }
 
 #card-details {
-  margin-top: 15px;
-  margin-left: 85px;
-  width: 100%;
-  font-size: 12px;
+  margin-top: 12px;
+  margin-left: 80px;
+  font-size: 11px;
   font-weight: bold;
 }
 
 #card-name {
   font-size: 17px;
+  padding-bottom: 1px;
   font-weight: bold;
 }
 
 #card-title {
-  font-size: 12px;
+  font-size: 11px;
   color: #6DA34D;
   font-weight: bold;
 }
 
 #card-company {
   font-style: italic;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 
 #card-website {
   color: #6DA34D;
-  font-size: 12px;
+  font-size: 11px;
 }

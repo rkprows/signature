@@ -7,9 +7,10 @@ class Card extends React.Component {
   render() {
     let { fullName, jobTitle, phoneNumber, email } = this.props.signature
     return(
+      <div className='editable' contentEditable>
       <div id='example' >
           <div id='card-header'>
-            <img src='../assets/logo.png' id='logo' className='left'></img>
+            <img src='../assets/logo.png' id='logo' className='left' contentEditable='false'></img>
             <p id='card-name'>{fullName}</p>
             <p id='card-title'>{jobTitle}</p>
             <p id='card-company' className='italic'>Rachel Prows Technologies</p>
@@ -20,6 +21,7 @@ class Card extends React.Component {
             <p id='card-front-desk'>{ this.props.frontDesk }</p>
             <p id='card-website'className='italic'>rachelprowstechnologies.com</p>
           </div>
+      </div>
       </div>
     )
   }

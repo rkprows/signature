@@ -39,7 +39,7 @@ class App extends React.Component {
   phoneChange() {
     let frontDesk
     if (this.refs.frontDesk.checked === true) {
-      frontDesk = 'FRONT DESK: 801-555-1234'
+      frontDesk = 'FRONT DESK: (801) 555-1234'
     } else {
       frontDesk = ''
     }
